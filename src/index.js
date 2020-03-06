@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export default function ExampleComponent() {
-  return (<h1>hoang</h1>)
+  const [counter, setCounter] = useState(1)
+  return (<h1>hoang co counter la: {counter}</h1>)
 }
