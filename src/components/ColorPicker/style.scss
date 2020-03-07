@@ -1,0 +1,44 @@
+.Polaris-ColorPicker--alternative {
+  display: flex;
+  .Polaris-ColorPicker__Chooser {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+  }
+
+  .Polaris-ColorPicker__Colors {
+    display: flex;
+  }
+  .Polaris-ColorPicker__ColorItem {
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 0.1rem solid rgb(0, 0, 0);
+    margin-right: 10px;
+    cursor: pointer;
+
+    &.Polaris-ColorPicker__ColorItemChooser {
+      background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+
+    &.Polaris-ColorPicker__ColorItem--selected {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        transform: rotate(45deg);
+        height: 20px;
+        width: 10px;
+        border-bottom: 4px solid rgb(120, 177, 63);
+        border-right: 4px solid rgb(120, 177, 63);
+        top: 5px;
+        left: 15px;
+      }
+    }
+  }
+}

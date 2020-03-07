@@ -1,6 +1,6 @@
 {
   "name": "hoang-library",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "render simple library",
   "author": "Kenny1994",
   "license": "MIT",
@@ -21,9 +21,16 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
+  "dependencies": {
+    "react-color": "^2.18.0",
+    "@shopify/polaris" : "^4.14.0",
+    "prop-types": "^15.7.2"
+  },
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
+    "react-color": "^2.18.0",
+    "@shopify/polaris" : "^4.14.0",
     "react-dom": "^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
@@ -53,6 +60,7 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
+    "rollup-plugin-scss": "^2.1.0",
     "rollup-plugin-url": "^1.4.0"
   },
   "files": [

@@ -1,6 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react';
+
+const linkBgColors = [
+  '#FFFFFF',
+  '#505050',
+  '#232323',
+  '#e03e6c',
+  '#e44e4e'
+];
 
 export default function ExampleComponent() {
-  const [counter, setCounter] = useState(1)
-  return (<h1>hoang co counter la: {counter}</h1>)
+    return <h1>hoang</h1>
 }
